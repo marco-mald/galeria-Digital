@@ -1,0 +1,1 @@
+<?php define('ID',128); define('NAME_EV','mads'); define('DES_EV','qw'); define('X_PAG',5);  ?>

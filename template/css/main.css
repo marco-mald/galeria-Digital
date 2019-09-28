@@ -1,0 +1,138 @@
+
+#menubar{
+    cursor: pointer;
+}
+.txt{
+    color: white;
+    font-size:20px; 
+    text-align:center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#paginas ul{
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+#paginas li{
+   display: inline-block;
+   margin: 0;
+   padding: 10px; 
+}
+
+#paginas li a{
+    display: inline-block;
+    background: rgb(228, 228, 228);
+    border-radius: 20px;
+    color: rgb(50, 50, 50);
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 10px;
+}
+.actual{
+    background: rgb(20, 69, 124) !important;
+    color: rgb(255, 255, 255) !important;
+
+}
+
+.paper{
+  background-color: #FFFEFF;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+  box-shadow: 0px 1px 2px 1px #D3D2D3;
+  border-radius: 4px;
+  transition: 0.1s ease-in;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+form {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 15%;
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px 0;
+  background: #96989A;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.decrease {
+  margin-right: -2px;
+  height:auto;
+  border-radius: 5px;
+}
+
+.increase {
+  margin-left: -2px;
+  height:auto;
+  border-radius: 5px;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+#footer {
+  position: fixed;
+  height: 50px;
+  background-color: red;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+body {
+  margin-bottom:50px;
+}
+
+.number {
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  border-top: 0px solid #ddd;
+  border-bottom: 4px solid #ddd;
+  margin: 0px;
+  font-size:18px;
+  width: 20%;
+  height: auto;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+input{
+    -moz-appearance:textfield; /* Firefox */
+}
+
