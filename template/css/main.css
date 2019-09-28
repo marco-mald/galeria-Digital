@@ -100,22 +100,26 @@ form #input-wrap {
   margin: 0px;
   padding: 0px;
 }
+p{
+  font-size:30px;
+}
 
 #footer {
-  position: fixed;
-  height: 80px;
-  border-radius: 5px;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: black;
   color: white;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+}
+.center{
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flexCont{
+  display: flex;
 }
 body {
-  margin-bottom:50px;
 }
 
 .number {

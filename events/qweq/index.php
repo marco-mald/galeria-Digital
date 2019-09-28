@@ -44,13 +44,11 @@ $imagenes = new GALERIA($x_pag, $evento);
             </div>
         </div>
     </div>
-    <br/>
-    <br/>
     <!-- Footer -->
     <footer id="footer" class="page-footer font-small indigo  ">
         <div class="container text-center text-md-left">
             <div class="row">
-                <div class="col-sm-2 mx-auto center">
+                <div class="col-md-2 mx-auto center">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Fotos Seleccionadas</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -58,8 +56,8 @@ $imagenes = new GALERIA($x_pag, $evento);
                         </li>
                     </ul>
                 </div>
-                
-                <div class="col-sm-2 mx-auto center">
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto center">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Fotos incluidas</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -67,8 +65,8 @@ $imagenes = new GALERIA($x_pag, $evento);
                         </li>
                     </ul>
                 </div>
-                
-                <div class="col-sm-2 mx-auto center">
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto center">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Fotos extras</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -76,17 +74,17 @@ $imagenes = new GALERIA($x_pag, $evento);
                         </li>
                     </ul>
                 </div>
-                
-                <div class="col-sm-2 mx-auto center">
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto center">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Incluir digitales</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <input type="checkbox" style="height: 30px; width: 30px; " id="check" onchange='handleChange(this);' value="">
+                            <input type="checkbox" id="check" onchange='handleChange(this);' value="">
                         </li>
                     </ul>
                 </div>
-                
-                <div class="col-sm-2 mx-auto center">
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto center">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Total a pagar</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -94,8 +92,8 @@ $imagenes = new GALERIA($x_pag, $evento);
                         </li>
                     </ul>
                 </div>
-                
-                <div class="col-sm-2 mx-auto center" style="padding:0%;">
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 mx-auto center">
                         <button type="button" style="margin-top: 10%; height: 40px; width: 150px; text-align: center;" onclick="btn();" class="btn btn-success">Realizar
                             pedido</button>
                 </div>

@@ -44,8 +44,6 @@ $imagenes = new GALERIA($x_pag, $evento);
             </div>
         </div>
     </div>
-    <br/>
-    <br/>
     <!-- Footer -->
     <footer id="footer" class="page-footer font-small indigo  ">
         <div class="container text-center text-md-left">
@@ -81,7 +79,7 @@ $imagenes = new GALERIA($x_pag, $evento);
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Incluir digitales</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <input type="checkbox" style="height: 30px; width: 30px; " id="check" onchange='handleChange(this);' value="">
+                            <input type="checkbox" id="check" onchange='handleChange(this);' value="">
                         </li>
                     </ul>
                 </div>
