@@ -25,47 +25,8 @@ $imagenes = new GALERIA($x_pag, $evento);
 </head>
 
 <body>
-    <!---Icon Menu  -->
-    <div id="menubar" style="width:3%; position: fixed; bottom: 15px; right: 15px; z-index:4;">
-        <img id="menubar" src="../../template/css/icon.png" height="50px" width="50px">
-    </div>
-    <!---Menu Resumen  -->
-    <div id="menu" style="position: fixed; right: 1px; top: 30%; background-color: black; z-index:4; border-radius: 5px;">
-        <h4 class="txt" style="margin:5px;">Resumen del pedido </h4>
-        <table class="table table-dark">
-            <tbody>
-                <tr>
-                    <td>Fotos Seleccionadas</td>
-                    <td id="seleccionadas">#</td>
-                </tr>
-                <tr>
-                    <td>Fotos incluidas</td>
-                    <td id="incluidas">10</td>
-                </tr>
-                <tr>
-                    <td>Fotos extras</td>
-                    <td id="extras">#</td>
-                </tr>
-                <tr>
-                    <td data-toggle="tooltip" title="Marcando esta opcion Incluye una copia digital de 
-                                                 alta calidad. ">Incluir digitales </td>
-                    <td><input type="checkbox" id="check" onchange='handleChange(this);' value=""></td>
-                </tr>
-                <tr>
-                    <td>Total a pagar</td>
-                    <td id="total">#</td>
-                </tr>
-            </tbody>
-        </table>
-        <center>
-            <button style="margin-bottom:5px; margin-top:0px;" type="button" onclick="btn();" class="btn btn-success">Realizar
-                pedido</button>
-        </center>
-    </div>
-    <!---End Menu -->
     <div id="cont" class="container gallery-container">
-        <h1> <?php echo $name_ev; ?> </h1>
-        <p class="page-description text-center"><?php echo $des_ev; ?></p>
+        <h1> <?php echo $des_ev; ?> </h1>
         <div class="tz-gallery">
             <div class="row">
                 <!--- mapeo de contenido -->
@@ -84,7 +45,69 @@ $imagenes = new GALERIA($x_pag, $evento);
         </div>
     </div>
     <div id="footer">
-        This is footer
+        <!-- Grid row -->
+        <h4 class="txt" style="margin:5px; margin-bottom: 15px;">Resumen del pedido </h4>
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+                <div class="row">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-8">
+                        <b>Fotos Seleccionadas</b>
+                    </div>
+                    <div class="col-sm-2">
+                        <p id="seleccionadas">#</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mx-auto">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <b>Fotos incluidas</b>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="incluidas">10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mx-auto">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <b>Fotos extras</b>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="extras">#</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mx-auto">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p data-toggle="tooltip" title="Marcando esta opcion Incluye una copia digital de 
+                                                 alta calidad. ">Incluir digitales </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="check" onchange='handleChange(this);' value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mx-auto">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <b>Total a pagar</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p id="total">#</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mx-auto">
+                <button type="button" onclick="btn();" class="btn btn-success">Realizar
+                    pedido</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
@@ -176,23 +199,7 @@ $imagenes = new GALERIA($x_pag, $evento);
             } else {
                 document.getElementById("check").checked = false;
             }
-            ///esconder menu
-            hide();
         });
-
-        ///ocultar menu
-        function hide() {
-            setTimeout(() => { //dar 4 segundos para mostrar
-                $('#menu').hide();
-                $("#menubar").show();
-            }, 3000);
-        }
-
-        document.getElementById('menubar').onclick = function() {
-            $("#menu").show();
-            hide();
-        }
-
 
         function actualizar(id, val) {
             ///actualizar valor del si existe en arreglo

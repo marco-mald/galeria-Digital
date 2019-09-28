@@ -103,12 +103,16 @@ form #input-wrap {
 
 #footer {
   position: fixed;
-  height: 50px;
-  background-color: red;
+  height: 80px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 body {
   margin-bottom:50px;
